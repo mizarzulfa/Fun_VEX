@@ -3,6 +3,7 @@
 *A series of VEX code snippets, Learning process and demonstrations showcasing syntax and abilities within SideFX Houdini*
 <p align="right"><small>Mizar Zulfa</small></p>
 
+⚠️ **Please note that this repository is currently being developed.**
 
 ## DAY 1 - VEX / VOP
 
@@ -42,6 +43,6 @@ wave += v;
 
 <img src="/Additional_images/VEX_VOP_INIT.png" width="2000px;"/>
 
-[File](https://github.com/mizarzulfa/Fun_VEX/blob/main/File/VOP_and_VEX_Initial.hip) VOP_VEX_Init_DAY1.vfl
+[File](https://github.com/mizarzulfa/Fun_VEX/blob/main/File/VOP_and_VEX_Initial.hip) VOP_VEX_Init_DAY1
 
 </details>
