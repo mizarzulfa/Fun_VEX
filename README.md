@@ -42,4 +42,6 @@ wave += v;
 
 <img src="/Additional_images/VEX_VOP_INIT.png" width="2000px;"/>
 
+[File](https://github.com/mizarzulfa/Fun_VEX/blob/main/File/VOP_and_VEX_Initial.hip) VOP_VEX_Init_DAY1.vfl
+
 </details>
