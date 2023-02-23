@@ -18,7 +18,7 @@
 
 ### VEX_TO_VOP
 
-DAY 1 - Recreate VOP to VEX
+DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
 
 ```c
 // Get values from user-defined channels
