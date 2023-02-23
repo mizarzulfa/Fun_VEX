@@ -12,7 +12,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`VEX_TO_VOP`](#VEX_TO_VOP)
+* [`VEX_TO_VOP`](##VEX_TO_VOP)
 
 
 
@@ -53,4 +53,5 @@ wave += v;
 <img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/>
 
 </details>
+
 <br>[⬆ Back to top](#VEX_TO_VOP)
