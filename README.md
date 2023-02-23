@@ -7,7 +7,7 @@
 
 ## DAY 1 - VEX / VOP
 
-### Initial Test
+### From VOP to VEX
 
 <details>
 <summary>View contents</summary>
@@ -44,5 +44,12 @@ wave += v;
 <img src="/Additional_images/VEX_VOP_INIT.png" width="2000px;"/>
 
 [File](https://github.com/mizarzulfa/Fun_VEX/blob/main/File/VOP_and_VEX_Initial.hip) VOP_VEX_Init_DAY1
+
+</details>
+
+<details>
+<summary>The equations used in these setups</summary>
+
+<img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/>
 
 </details>
