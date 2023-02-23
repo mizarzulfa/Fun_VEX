@@ -12,6 +12,10 @@
 
 ⚠️ **Please note that this repository is currently being developed.**
 
+
+# Topics
+* [VOP/VEX - Loop - Sin()](#DAY-1---VEX-/-VOP)
+
 ## DAY 1 - VEX / VOP
 
 ### From VOP to VEX
