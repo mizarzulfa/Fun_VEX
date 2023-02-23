@@ -14,7 +14,7 @@
 
 
 # Topics
-* [VOP/VEX - Loop - Sin()](#DAY-1---VEX-/-VOP)
+* [VOP/VEX - Loop - Sin()](#VEX_TO_VOP)
 
 ## DAY 1 - VEX / VOP
 
