@@ -14,8 +14,8 @@
 
 
 # Topics
-* [VOP/VEX - Loop - Sin()](#VEX_TO_VOP)
-* [Animated Noise with Cross Product](#aanoise)
+* [VOP/VEX - Loop - Sin()](##VOP_TO_VEX)
+* [Animated Noise with Cross Product](##aanoise)
   
 
 <!-- LIST 1  -->
