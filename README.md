@@ -14,9 +14,10 @@
 
 
 # Topics
-* [VOP/VEX - Loop - Sin()](##VOP_TO_VEX)
-* [Animated Noise with Cross Product](##aanoise)
-  
+- [FUN VEX Muscle](#fun-vex-muscle)
+- [Topics](#topics)
+    - [From VOP to VEX](#from-vop-to-vex)
+    - [Animated Noise with Cross Product](#animated-noise-with-cross-product)
 
 <!-- LIST 1  -->
 ### From VOP to VEX
@@ -24,9 +25,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`VOP_TO_VEX`](##VOP_TO_VEX)
-
-DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
+* DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
 
 ```c
 // Get values from user-defined channels
@@ -65,9 +64,7 @@ wave += v;
 <details>
 <summary>View contents</summary>
 
-* [`aanoise`](##aanoise)
-
-DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
+* Animated Noise with Cross Product
 
 ```c
 #include <voplib.h>   
