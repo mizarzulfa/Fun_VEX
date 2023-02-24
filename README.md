@@ -15,19 +15,16 @@
 
 # Topics
 * [VOP/VEX - Loop - Sin()](#VEX_TO_VOP)
+* [Animated Noise with Cross Product](#aanoise)
+  
 
-## DAY 1 - VEX / VOP
-
+<!-- LIST 1  -->
 ### From VOP to VEX
 
 <details>
 <summary>View contents</summary>
 
-* [`VEX_TO_VOP`](##VEX_TO_VOP)
-
-
-
-### VEX_TO_VOP
+* [`VOP_TO_VEX`](##VOP_TO_VEX)
 
 DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
 
@@ -50,19 +47,64 @@ wave += v;
 ```
 
 <details>
-<summary>Example</summary>
-
-<img src="/Additional_images/VEX_VOP_INIT.png" width="2000px;"/>
-
-[File](https://github.com/mizarzulfa/Fun_VEX/blob/main/File/VOP_and_VEX_Initial.hip) VOP_VEX_Init_DAY1
-
+<summary>The equations used in these setups</summary>
+<img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/>
 </details>
+
+<br>[⬆ Back to top](#Topics)
+</details>
+
+<!-- ----------------------  -->
+
+
+<br>
+
+<!-- LIST 2  -->
+### Animated Noise with Cross Product
+
+<details>
+<summary>View contents</summary>
+
+* [`aanoise`](##aanoise)
+
+DAY 1 - Recreate VOP to VEX (LOOP - Object Hovering)
+
+```c
+#include <voplib.h>   
+    
+// Calculate vector from current point to neighboring point with @ptnum 1
+vector substract_vel = point(1, 'P', @ptnum) - @P;
+
+// Cross product with the fixed vector {0,0,1}
+vector crossnew = {0,0,1};
+crossnew = cross(crossnew, substract_vel);
+
+// Convert to Vector4 with the 4th component as the current time
+vector4 pos_noise = set(crossnew.x, crossnew.y, crossnew.z, @Time);
+
+// Apply an offset to the noise
+float power = pow(rand(i@id), 0);
+power = clamp(power, 0, 4);
+float offset = power + chf('offset');
+
+// Set the amplitude of the noise
+float amplitudo = chf('amplitudo');
+
+// Calculate Aanoise using the fbmNoiseFP function in VOPs
+vector aanoise1 = vop_fbmNoiseFP(pos_noise + offset, 1, 32, 'noise') * amplitudo;
+aanoise1 += crossnew;
+
+// Set the calculated noise vector as the normal and velocity vectors
+v@N = aanoise1;
+v@v = aanoise1;
+```
 
 <details>
 <summary>The equations used in these setups</summary>
-
-<img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/>
-
+ <!-- <img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/> -->
 </details>
 
-<br>[⬆ Back to top](#VEX_TO_VOP)
+<br>[⬆ Back to top](#Topics)
+</details>
+
+<!-- ----------------------  -->
