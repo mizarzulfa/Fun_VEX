@@ -14,10 +14,8 @@
 
 
 # Topics
-- [FUN VEX Muscle](#fun-vex-muscle)
-- [Topics](#topics)
-    - [From VOP to VEX](#from-vop-to-vex)
-    - [Animated Noise with Cross Product](#animated-noise-with-cross-product)
+  * **[From VOP to VEX](#from-vop-to-vex)**
+  * **[Animated Noise with Cross Product](#animated-noise-with-cross-product)**
 
 <!-- LIST 1  -->
 ### From VOP to VEX
