@@ -57,6 +57,52 @@ wave += v;
 <br>
 
 <!-- LIST 2  -->
+### VEX - vop_fbmNoiseFP() for Anti-Aliased Noise
+
+<details>
+<summary>View contents</summary>
+
+* VEX - vop_fbmNoiseFP() for Anti-Aliased Noise
+
+```c
+/////
+#include <voplib.h>
+vector4 pos = set(v@P.x, v@P.y, v@P.z, 0);
+v@Cd = vop_fbmNoiseFP(pos, 0.5, 8, 'noise') + 0.5;
+/////
+
+float vop_fbmNoiseFF(float pos; float rough; int maxoctaves; string noisetype)
+float vop_fbmNoiseFV(vector pos; float rough; int maxoctaves; string noisetype)
+float vop_fbmNoiseFP(vector4 pos; float rough; int maxoctaves; string noisetype)
+vector vop_fbmNoiseVF(float pos; float rough; int maxoctaves; string noisetype)
+vector vop_fbmNoiseVV(vector pos; float rough; int maxoctaves; string noisetype)
+vector vop_fbmNoiseVP(vector4 pos; float rough; int maxoctaves; string noisetype)
+
+```
+
+<details>
+<summary>Description</summary>
+ <!-- <img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/> -->
+  In Houdini, you can create anti-aliased noise with the vop_fbmNoiseFP() function from the voplib.h library.
+  <br> The code includes this library using the #include directive in the first line.
+
+  > To use the function, you need to specify the position vector, roughness, maximum octaves, and noise type. The function returns a value that you can add to a constant to color the point.
+
+  > There are several vop_fbmNoiseXX() functions available, each with different return types and dimensions. You can use float (F), vector (V), or vector4 (P) depending on your needs.
+
+> When calling the function, the first letter in the last two upper case letters indicates the return type: float (F) or vector (V). The second letter specifies the dimension of the position argument: float (F), vector (V), or vector4 (P).
+
+Remember to include the library to avoid errors, and adjust the parameters to create different noise patterns in your project.
+</details>
+
+<br>[⬆ Back to top](#Topics)
+</details>
+
+<!-- ----------------------  -->
+
+<br>
+
+<!-- LIST 3  -->
 ### Animated Noise with Cross Product
 
 <details>
