@@ -12,6 +12,12 @@
 
 ⚠️ **Please note that this repository is currently being developed.**
 
+## What is VEX?
+
+VEX is a shading language used in Houdini that is similar to the Renderman Shading Language (RSL). It is a software interpreted language, which means that it provides the flexibility of scripting without requiring pre-compilation of code. Additionally, it has an implicitly SIMD evaluation approach, where your code is executed over multiple data such as vertices, points, primitives, pixels, and voxels.
+
+VEX is used for a wide range of tasks, including geometry, volume and simulation processing, as well as shading and compositing. It is highly optimized for use in Houdini and provides a significant performance boost over other scripting or programming languages.
+
 
 # Topics
   * **[From VOP to VEX](#from-vop-to-vex)**
