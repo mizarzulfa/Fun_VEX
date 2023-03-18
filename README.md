@@ -177,6 +177,16 @@ In this case, we can divide 2 by 5 once, with a remainder of 2.
 Therefore, the result of 2 % 5 is 2.
 ```
 
+<details>
+<summary>Real life Example</summary>
+ <!-- <img src="/Additional_images/INIT_Graphing Sine Functions.gif" width="2000px;"/> -->
+
+  > When we divide 2 by 5, we cannot divide it evenly into 5 parts, so there will be some left over. That left over part is called the remainder. In this case, the remainder is 2. To make it simpler, imagine you have 2 apples and you want to divide them equally among 5 people. Since you cannot divide the apples equally into 5 parts, you will have some pieces left over. The number of leftover pieces is the remainder. In this case, you will have 2 apples and no extra pieces, so the remainder is 2.
+
+  > **1 % 5** : If you have a group of 5 people and you want to divide a bag of candy evenly among them, you would have 5 portions. However, if you only have 1 piece of candy, it cannot be divided evenly among the 5 people, and the remainder would be 1. Therefore, 1 % 5 would result in a remainder of 1.
+
+</details>
+
 <br>[⬆ Back to top](#Topics)
 </details>
 
