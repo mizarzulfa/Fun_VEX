@@ -158,3 +158,8 @@ v@v = aanoise1;
 </details>
 
 <!-- ----------------------  -->
+
+# Quick Notes -
+when we use the modulo operator, we are essentially asking the question "What is the remainder when we divide the first number (in this case, 2) by the second number (in this case, 5)?"
+
+In this case, we can divide 2 by 5 once, with a remainder of 2. Therefore, the result of 2 % 5 is 2.
