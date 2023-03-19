@@ -160,8 +160,8 @@ v@v = aanoise1;
 <!-- ----------------------  -->
 <br>
 
-<!-- LIST 4  -->
-### Quick Notes : Modulo
+<!-- LIST 5  -->
+### Quick Notes : Modulo Operator
 
 <details>
 <summary>View contents</summary>
@@ -186,6 +186,46 @@ Therefore, the result of 2 % 5 is 2.
   > **1 % 5** : If you have a group of 5 people and you want to divide a bag of candy evenly among them, you would have 5 portions. However, if you only have 1 piece of candy, it cannot be divided evenly among the 5 people, and the remainder would be 1. Therefore, 1 % 5 would result in a remainder of 1.
 
 </details>
+
+<br>[⬆ Back to top](#Topics)
+</details>
+
+<!-- ----------------------  -->
+
+<br>
+
+<!-- LIST 6  -->
+### Quick Notes : Creating Points and Applying a Normalized Polyline
+
+<details>
+<summary>View contents</summary>
+
+* Creating Points and Applying a Normalized Polyline
+
+```c
+// Set the vector b to the value of the 'point' channel.
+vector b = chv('point');
+
+// If the 'normalize' channel is set to 1, normalize vector b.
+if (chi('normalize'))
+{
+    b = normalize(b);
+}
+
+// Add a point to the geometry at the position of vector b and store the point index in p1.
+int p1 = addpoint(0, b);
+
+// Add a second point at the origin and store the point index in p2.
+int p2 = addpoint(0, {0,0,0});
+
+// Add a polyline primitive connecting points p1 and p2 to the geometry and store the primitive index in primm.
+int primm = addprim(0, "polyline", p1, p2);
+
+// Set the color attribute of points p1 and p2 to the absolute value of vector b.
+// setpointattrib(0, "Cd", p1, abs(b), "set");
+// setpointattrib(0, "Cd", p2, abs(b), "set");
+
+```
 
 <br>[⬆ Back to top](#Topics)
 </details>
